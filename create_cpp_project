@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Verify config flag
+if [ -z "$Config" ]
+then
+	echo "\t Não configurado";
+	exit;
+fi
+
+echo -n "O projeto possui biblioteca separada?[s/n]";
+read lib
+
+case $lib in
+	"s")
+		echo -n "Deseja adicionar biblioteca local[s/n]: "
+		read disc;
+
+		case $disc in 
+			"s") mkdir -p lib
+			;;
+			"n") 
+				echo -n "Adicione a localização da biblioteca: "
+				read path
+				ln -sr $path/lib lib
+			;;
+		esac
+	;;
+esac
+
+cp -r $Template/Cpp/* .
+
+echo -n "Deseja versionar o projeto com git?[s/n]"
+read git
+
+case $git in
+	"s") git init
+		 git add .
+		 git commit -a -m "Start"
+	;;
+esac
+
+

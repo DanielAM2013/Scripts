@@ -1,0 +1,28 @@
+export Documents=$Home/Documents
+export Pictures=$Home/Pictures
+export Template=$Home/Templates
+export Downloads=$Home/Downloads
+export Music=$Home/Music
+export Desktop=$Home/Desktop
+
+export Report="Relatórios"
+export Job="Trabalhos"
+export Project="Projetos"
+export Abstract="Resumos"
+export Documentation="Documentações"
+
+export Software=$Arquivos/Software
+
+export Engineering=$Arquivos/Library/Engineering
+export Library=$Arquivos/Library
+export Electrical=$Engineering/Electrical
+export Computer=$Electrical/Computer
+export Mathematical="$Library/Formal Science/Mathematical"
+export Org="$Documents/Organizacao/"
+export Periodo="10P"
+export DIC="$Org/$Periodo/dic"
+export Programacao="$Library/Engineering/Electrical/Computer/Programacao/"
+export Tests="$Documents/Tests"
+export Formatation="$Documents/Formatacao"
+export Projects="$Documents/$Project"
+export VRP="$Projects/VRP/VRP"

@@ -1,0 +1,380 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  cuda-command-line-tools-6-5 cuda-core-6-5 cuda-cublas-6-5
+  cuda-cublas-dev-6-5 cuda-cudart-6-5 cuda-cudart-dev-6-5 cuda-cufft-6-5
+  cuda-cufft-dev-6-5 cuda-curand-6-5 cuda-curand-dev-6-5 cuda-cusparse-6-5
+  cuda-cusparse-dev-6-5 cuda-documentation-6-5 cuda-driver-dev-6-5
+  cuda-license-6-5 cuda-misc-headers-6-5 cuda-npp-6-5 cuda-npp-dev-6-5
+  cuda-samples-6-5 cuda-toolkit-6-5 cuda-visual-tools-6-5 freeglut3-dev
+  kde-l10n-engb kde-l10n-pt kde-l10n-ptbr libxmu-dev libxmu-headers
+  nvidia-340-dev nvidia-modprobe
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  parallel
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 202 kB of archives.
+After this operation, 639 kB of additional disk space will be used.
+Get:1 http://br.archive.ubuntu.com/ubuntu/ trusty/universe parallel all 20130922-1 [202 kB]
+Fetched 202 kB in 0s (231 kB/s)
+Selecting previously unselected package parallel.
+(Reading database ... 483849 files and directories currently installed.)
+Preparing to unpack .../parallel_20130922-1_all.deb ...
+Adding 'diversion of /usr/bin/parallel to /usr/bin/parallel.moreutils by parallel'
+Adding 'diversion of /usr/share/man/man1/parallel.1.gz to /usr/share/man/man1/parallel.moreutils.1.gz by parallel'
+Unpacking parallel (20130922-1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for doc-base (0.10.5) ...
+Processing 1 added doc-base file...
+Setting up parallel (20130922-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gcc is already the newest version.
+libfile-fcntllock-perl is already the newest version.
+libwww-perl is already the newest version.
+libwww-perl set to manually installed.
+unzip is already the newest version.
+fontconfig is already the newest version.
+The following packages were automatically installed and are no longer required:
+  cuda-command-line-tools-6-5 cuda-core-6-5 cuda-cublas-6-5
+  cuda-cublas-dev-6-5 cuda-cudart-6-5 cuda-cudart-dev-6-5 cuda-cufft-6-5
+  cuda-cufft-dev-6-5 cuda-curand-6-5 cuda-curand-dev-6-5 cuda-cusparse-6-5
+  cuda-cusparse-dev-6-5 cuda-documentation-6-5 cuda-driver-dev-6-5
+  cuda-license-6-5 cuda-misc-headers-6-5 cuda-npp-6-5 cuda-npp-dev-6-5
+  cuda-samples-6-5 cuda-toolkit-6-5 cuda-visual-tools-6-5 freeglut3-dev
+  kde-l10n-engb kde-l10n-pt kde-l10n-ptbr libxmu-dev libxmu-headers
+  nvidia-340-dev nvidia-modprobe
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  equivs
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 18,5 kB of archives.
+After this operation, 87,0 kB of additional disk space will be used.
+Get:1 http://br.archive.ubuntu.com/ubuntu/ trusty/universe equivs all 2.0.9 [18,5 kB]
+Fetched 18,5 kB in 0s (58,0 kB/s)
+Selecting previously unselected package equivs.
+(Reading database ... 483872 files and directories currently installed.)
+Preparing to unpack .../archives/equivs_2.0.9_all.deb ...
+Unpacking equivs (2.0.9) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up equivs (2.0.9) ...
+dh_testdir
+dh_testroot
+dh_prep
+dh_testdir
+dh_testroot
+dh_install
+dh_installdocs
+dh_installchangelogs
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `texlive-local' in `../texlive-local_2014-1~9_all.deb'.
+
+The package has been created.
+Attention, the package has been created in the current directory,
+not in ".." as indicated by the message above!
+Selecting previously unselected package texlive-local.
+dpkg: regarding .../texlive-local_2014-1~9_all.deb containing texlive-local:
+ texlive-binaries conflicts with makejvf
+  texlive-local provides makejvf and is to be installed.
+
+dpkg: error processing archive /tmp/tmp.pM7EXG05N7/texlive-local_2014-1~9_all.deb (--install):
+ conflicting packages - not installing texlive-local
+Errors were encountered while processing:
+ /tmp/tmp.pM7EXG05N7/texlive-local_2014-1~9_all.deb
+--2014-12-21 19:16:14--  http://ctan.tche.br/systems/texlive/tlnet/install-tl-unx.tar.gz
+Resolving ctan.tche.br (ctan.tche.br)... 200.132.0.80, 2804:0:0:faca::80
+Connecting to ctan.tche.br (ctan.tche.br)|200.132.0.80|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3341660 (3,2M) [application/x-gzip]
+Saving to: ‘install-tl-unx.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  1%  222K 14s
+    50K .......... .......... .......... .......... ..........  3%  269K 13s
+   100K .......... .......... .......... .......... ..........  4%  390K 11s
+   150K .......... .......... .......... .......... ..........  6%  289K 11s
+   200K .......... .......... .......... .......... ..........  7%  438K 10s
+   250K .......... .......... .......... .......... ..........  9% 1,30M 9s
+   300K .......... .......... .......... .......... .......... 10%  538K 8s
+   350K .......... .......... .......... .......... .......... 12%  544K 8s
+   400K .......... .......... .......... .......... .......... 13%  586K 7s
+   450K .......... .......... .......... .......... .......... 15% 1,21M 6s
+   500K .......... .......... .......... .......... .......... 16%  876K 6s
+   550K .......... .......... .......... .......... .......... 18% 1,03M 6s
+   600K .......... .......... .......... .......... .......... 19%  767K 5s
+   650K .......... .......... .......... .......... .......... 21% 1,29M 5s
+   700K .......... .......... .......... .......... .......... 22%  731K 5s
+   750K .......... .......... .......... .......... .......... 24% 1,12M 5s
+   800K .......... .......... .......... .......... .......... 26%  800K 4s
+   850K .......... .......... .......... .......... .......... 27% 1,50M 4s
+   900K .......... .......... .......... .......... .......... 29% 1,23M 4s
+   950K .......... .......... .......... .......... .......... 30%  914K 4s
+  1000K .......... .......... .......... .......... .......... 32% 1,28M 4s
+  1050K .......... .......... .......... .......... .......... 33%  813K 4s
+  1100K .......... .......... .......... .......... .......... 35% 1,25M 3s
+  1150K .......... .......... .......... .......... .......... 36% 1,29M 3s
+  1200K .......... .......... .......... .......... .......... 38% 1,22M 3s
+  1250K .......... .......... .......... .......... .......... 39% 1,24M 3s
+  1300K .......... .......... .......... .......... .......... 41% 1,26M 3s
+  1350K .......... .......... .......... .......... .......... 42% 1,25M 3s
+  1400K .......... .......... .......... .......... .......... 44% 1,29M 3s
+  1450K .......... .......... .......... .......... .......... 45% 1,23M 2s
+  1500K .......... .......... .......... .......... .......... 47% 1,24M 2s
+  1550K .......... .......... .......... .......... .......... 49% 1,23M 2s
+  1600K .......... .......... .......... .......... .......... 50% 1,27M 2s
+  1650K .......... .......... .......... .......... .......... 52% 1,26M 2s
+  1700K .......... .......... .......... .......... .......... 53% 1,25M 2s
+  1750K .......... .......... .......... .......... .......... 55% 1,21M 2s
+  1800K .......... .......... .......... .......... .......... 56% 1,27M 2s
+  1850K .......... .......... .......... .......... .......... 58% 1,27M 2s
+  1900K .......... .......... .......... .......... .......... 59% 1,19M 2s
+  1950K .......... .......... .......... .......... .......... 61% 1,33M 2s
+  2000K .......... .......... .......... .......... .......... 62% 1,25M 1s
+  2050K .......... .......... .......... .......... .......... 64% 1,23M 1s
+  2100K .......... .......... .......... .......... .......... 65% 1,29M 1s
+  2150K .......... .......... .......... .......... .......... 67% 1,23M 1s
+  2200K .......... .......... .......... .......... .......... 68% 1,23M 1s
+  2250K .......... .......... .......... .......... .......... 70% 1,27M 1s
+  2300K .......... .......... .......... .......... .......... 72% 1023K 1s
+  2350K .......... .......... .......... .......... .......... 73% 1,52M 1s
+  2400K .......... .......... .......... .......... .......... 75% 1,25M 1s
+  2450K .......... .......... .......... .......... .......... 76% 1,26M 1s
+  2500K .......... .......... .......... .......... .......... 78% 1,36M 1s
+  2550K .......... .......... .......... .......... .......... 79% 1,23M 1s
+  2600K .......... .......... .......... .......... .......... 81%  185K 1s
+  2650K .......... .......... .......... .......... .......... 82% 26,4M 1s
+  2700K .......... .......... .......... .......... .......... 84% 31,9M 1s
+  2750K .......... .......... .......... .......... .......... 85% 31,6M 1s
+  2800K .......... .......... .......... .......... .......... 87% 31,6M 0s
+  2850K .......... .......... .......... .......... .......... 88% 27,1M 0s
+  2900K .......... .......... .......... .......... .......... 90%  177K 0s
+  2950K .......... .......... .......... .......... .......... 91%  123K 0s
+  3000K .......... .......... .......... .......... .......... 93%  247K 0s
+  3050K .......... .......... .......... .......... .......... 94%  481K 0s
+  3100K .......... .......... .......... .......... .......... 96%  517K 0s
+  3150K .......... .......... .......... .......... .......... 98%  570K 0s
+  3200K .......... .......... .......... .......... .......... 99%  659K 0s
+  3250K .......... ...                                        100%  590K=4,5s
+
+2014-12-21 19:16:19 (723 KB/s) - ‘install-tl-unx.tar.gz’ saved [3341660/3341660]
+
+/usr/share/fonts: caching, new cache contents: 0 fonts, 8 dirs
+/usr/share/fonts/X11: caching, new cache contents: 0 fonts, 6 dirs
+/usr/share/fonts/X11/100dpi: caching, new cache contents: 358 fonts, 0 dirs
+/usr/share/fonts/X11/75dpi: caching, new cache contents: 358 fonts, 0 dirs
+/usr/share/fonts/X11/Type1: caching, new cache contents: 117 fonts, 0 dirs
+/usr/share/fonts/X11/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/X11/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/misc: caching, new cache contents: 59 fonts, 0 dirs
+/usr/share/fonts/X11/util: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap: caching, new cache contents: 0 fonts, 5 dirs
+/usr/share/fonts/cmap/adobe-cns1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-gb1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-japan1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-japan2: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-korea1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/eot: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/eot/font-awesome: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 12 dirs
+/usr/share/fonts/opentype/cabin: caching, new cache contents: 8 fonts, 0 dirs
+/usr/share/fonts/opentype/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/opentype/fonts-hosny-amiri: caching, new cache contents: 5 fonts, 0 dirs
+/usr/share/fonts/opentype/freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/opentype/ipaexfont-gothic: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/opentype/ipaexfont-mincho: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/opentype/ipafont-gothic: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/opentype/ipafont-mincho: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/opentype/linux-libertine: caching, new cache contents: 13 fonts, 0 dirs
+/usr/share/fonts/opentype/lobster: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/opentype/lobstertwo: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/opentype/stix: caching, new cache contents: 29 fonts, 0 dirs
+/usr/share/fonts/svg: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/svg/font-awesome: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 2 fonts, 47 dirs
+/usr/share/fonts/truetype/abyssinica: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/adf: caching, new cache contents: 28 fonts, 0 dirs
+/usr/share/fonts/truetype/arphic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/truetype/artemisia: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/asana-math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/baskerville: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/bodoni-classic: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/comfortaa: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/truetype/complutum: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/dejavu: caching, new cache contents: 21 fonts, 0 dirs
+/usr/share/fonts/truetype/didot: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/didot-classic: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/droid: caching, new cache contents: 18 fonts, 0 dirs
+/usr/share/fonts/truetype/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/gazis: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/gentium: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/gentium-basic: caching, new cache contents: 8 fonts, 0 dirs
+/usr/share/fonts/truetype/horai-umefont: caching, new cache contents: 18 fonts, 0 dirs
+/usr/share/fonts/truetype/inconsolata: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/junicode: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/kacst: caching, new cache contents: 15 fonts, 0 dirs
+/usr/share/fonts/truetype/kacst-one: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/truetype/lao: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/lato: caching, new cache contents: 10 fonts, 0 dirs
+/usr/share/fonts/truetype/liberation: caching, new cache contents: 16 fonts, 0 dirs
+/usr/share/fonts/truetype/msttcorefonts: caching, new cache contents: 60 fonts, 0 dirs
+/usr/share/fonts/truetype/nanum: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/truetype/neohellenic: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/olga: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/openoffice: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/padauk: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/porson: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/sinhala: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/solomos: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/takao-gothic: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/theokritos: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/tibetan-machine: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/tlwg: caching, new cache contents: 54 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-dejavu: caching, new cache contents: 21 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-indic-fonts-core: caching, new cache contents: 17 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-khmeros-core: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-punjabi-fonts: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-xfree86-nonfree: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/ubuntu-font-family: caching, new cache contents: 13 fonts, 0 dirs
+/usr/share/fonts/truetype/unfonts-core: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/wqy: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts/type1: caching, new cache contents: 0 fonts, 4 dirs
+/usr/share/fonts/type1/gsfonts: caching, new cache contents: 35 fonts, 0 dirs
+/usr/share/fonts/type1/gsfonts-other: caching, new cache contents: 17 fonts, 0 dirs
+/usr/share/fonts/type1/mathml: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/type1/texlive-fonts-recommended: caching, new cache contents: 47 fonts, 0 dirs
+/usr/share/fonts/woff: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/woff/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/usr/local/texlive/2014/texmf-dist/fonts/opentype: caching, new cache contents: 0 fonts, 8 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/adobe: caching, new cache contents: 0 fonts, 2 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/adobe/sourcecodepro: caching, new cache contents: 7 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/adobe/sourcesanspro: caching, new cache contents: 12 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis: caching, new cache contents: 0 fonts, 5 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis/accanthis: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis/berenisadf: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis/gillius: caching, new cache contents: 16 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis/mintspirit: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/arkandis/universalis: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/carrois: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/carrois/fira: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/gust: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/gust/poltawski: caching, new cache contents: 40 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari: caching, new cache contents: 0 fonts, 5 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari/cabin: caching, new cache contents: 16 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari/librebaskerville: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari/librecaslon: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari/lobster2: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/impallari/quattrocento: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/nowacki: caching, new cache contents: 0 fonts, 2 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/nowacki/iwona: caching, new cache contents: 20 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/nowacki/kurier: caching, new cache contents: 20 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public: caching, new cache contents: 0 fonts, 43 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/Asana-Math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/antt: caching, new cache contents: 16 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/baskervaldx: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/ccicons: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/cm-unicode: caching, new cache contents: 33 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/cyklop: caching, new cache contents: 2 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/ebgaramond: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fandol: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fbb: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fdsymbol: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fetamont: caching, new cache contents: 36 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fontawesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsartemisia: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsbaskerville: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsbodoni: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfscomplutum: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsdidot: caching, new cache contents: 5 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsneohellenic: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfsporson: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gfssolomos: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/gnu-freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/heuristica: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/inconsolata: caching, new cache contents: 2 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/libertine: caching, new cache contents: 17 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lilyglyphs: caching, new cache contents: 9 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm: caching, new cache contents: 72 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/mdsymbol: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/mnsymbol: caching, new cache contents: 14 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/ocr-b-outline: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/oldstandard: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/phaistos: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/philokalia: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/playfair: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/punknova: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/semaphor: caching, new cache contents: 15 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/skaknew: caching, new cache contents: 5 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/stix: caching, new cache contents: 5 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/tex-gyre: caching, new cache contents: 33 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/tex-gyre-math: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/umtypewriter: caching, new cache contents: 5 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/xcharter: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/public/xits: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/theleagueofmoveabletype: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/opentype/theleagueofmoveabletype/raleway: caching, new cache contents: 18 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype: caching, new cache contents: 0 fonts, 8 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/huerta: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/huerta/alegreya: caching, new cache contents: 40 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/impallari: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/impallari/lobster2: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/intel: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/intel/clearsans: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/muhafara: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/muhafara/overlock: caching, new cache contents: 7 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/ndiscovered: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/ndiscovered/cinzel: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/paratype: caching, new cache contents: 0 fonts, 3 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/paratype/ptmono: caching, new cache contents: 2 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/paratype/ptsans: caching, new cache contents: 8 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/paratype/ptserif: caching, new cache contents: 6 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public: caching, new cache contents: 0 fonts, 17 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/Asana-Math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/amiri: caching, new cache contents: 5 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/anonymouspro: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/belleek: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/comfortaa: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/dejavu: caching, new cache contents: 21 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/droid: caching, new cache contents: 7 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/ebgaramond: caching, new cache contents: 3 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/fonetika: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/gentium-tug: caching, new cache contents: 16 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/gnu-freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/ipaex: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/junicode: caching, new cache contents: 4 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/lato: caching, new cache contents: 10 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/marvosym: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/opensans: caching, new cache contents: 12 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/persian-modern: caching, new cache contents: 12 fonts, 0 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/sorkin: caching, new cache contents: 0 fonts, 1 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype/sorkin/merriweather: caching, new cache contents: 16 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/lm: caching, new cache contents: 72 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/lm-math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre: caching, new cache contents: 33 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre-math: caching, new cache contents: 2 fonts, 0 dirs
+/usr/share/fonts: caching, new cache contents: 0 fonts, 8 dirs
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/usr/local/texlive/2014/texmf-dist/fonts/opentype: caching, new cache contents: 0 fonts, 8 dirs
+/usr/local/texlive/2014/texmf-dist/fonts/truetype: caching, new cache contents: 0 fonts, 8 dirs
+/usr/share/texmf/fonts/opentype/public/lm: caching, new cache contents: 72 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/lm-math: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre: caching, new cache contents: 33 fonts, 0 dirs
+/usr/share/texmf/fonts/opentype/public/tex-gyre-math: caching, new cache contents: 2 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/.cache/fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded
+texhash: Updating /usr/local/texlive/2014/texmf-config/ls-R... 
+texhash: Updating /usr/local/texlive/2014/texmf-dist/ls-R... 
+texhash: Updating /usr/local/texlive/2014/texmf-var/ls-R... 
+texhash: Updating /usr/local/texlive/texmf-local/ls-R... 
+texhash: Done.

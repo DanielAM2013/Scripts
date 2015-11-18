@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Digite o nome da nova variável: ";
+read name;
+
+echo "Digite o valor da nova variável: "
+read value;
+
+export "$name"="\"$value\"";
+echo "export $name=\"$value\"" >> $Scripts/args/Variables;
+reset

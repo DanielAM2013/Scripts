@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in $(seq 0 1 3)
+do
+	sudo cpufreq-set -c $i -g performance
+done

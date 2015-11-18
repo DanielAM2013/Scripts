@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -n "$2" ]
+then
+	echo ""$1"="$2"" >> ~/.bashrc
+else
+	echo "Insira os argumentos."
+fi

@@ -1,0 +1,3 @@
+Arquivos	/media/Arquivos
+Home	$Arquivos/Home
+Script	$Home/Scripts

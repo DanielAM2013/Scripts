@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DIR=$(pwd)
+
+# Create default files
+mkdir -p src ocl lib bin out
+
+# Copy Makefile
+cp $Template/OpenCL/Makefile .
+
+echo -n "Digit your source name: "
+read source_name;
+
+touch src/"$source_name";
+
