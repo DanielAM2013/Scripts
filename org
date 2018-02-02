@@ -1,8 +1,5 @@
 #!/bin/bash
 
-Password="daniel0519";
-
-echo "Escrito por Daniel A. Torquato para bash."
 
 unset opt;
 
