@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+print_matrix () {
+	var="$1[@]";
+	matrix=("${!var}");
+	size=$(( ${#matrix[@]} + 1 ));
+	n=$2;
+	m=$(( $size / $n ));
+
+	for (( i=0; i< $m ; i++ ))
+	do
+		for (( j=0 ; j < $n ; j++ ))
+		do
+			idx=$(( $i * $n + $j ));
+			echo ${matrix[$idx]};
+		done
+	done
+}
+

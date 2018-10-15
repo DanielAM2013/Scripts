@@ -1,0 +1,246 @@
+!/bin/bash
+
+# save the configuration in file
+source ./status;
+load_info () {
+	local size=$(wc -l ./status | awk '{print $1}');
+		info=(\
+		$(for (( i=1; i<=$size; i++ ))
+		do
+			tmp=$(sed "${i}q;d" ./status);
+			tmp="${tmp/=/ } "
+			echo ${tmp//\'/}
+		done))
+}
+load_info;
+
+menus=(\
+settings 'Settings' \
+dl_mode  'Download Mode' \
+at_mode  'AT Mode' \
+send_at  'Send AT Cmds' \
+sl_cmds  'Select CMD' \
+serial   'Check Serial Log' \
+);
+
+configs=(\
+status   'Show current status' \
+tty_uart 'Select current UART serial' \
+tty_ctrl  'Select current UART serial' \
+usb      'Select current USB' \
+usbtype  'Select the USB type={B,C}' \
+jigtype  'Select the Jig type={ANYWAY,PDM}'\
+);
+
+usbtype=(\
+	b 'USB type-B'\
+	c 'USB type-C'\
+);
+
+jigtype=(\
+	anyway 'Jig ANYWAY'\
+	pdm    'Jig PDM'\
+);
+
+at_cmds=(\
+at 'AT B ANYWAY' \
+at_c 'AT C ANYWAY (103)' \
+at_pdm 'AT B PDM' \
+at_pdm_c 'AT C PDM' \
+at_pdm_j6 'AT B PDM J6' \
+)
+
+dl_cmds=(\
+dl 'DOWNLOAD B ANYWAY' \
+dl_c 'DOWNLOAD C ANYWAY (103)' \
+dl_pdm 'DOWNLOAD B PDM' \
+dl_pdm_c 'DOWNLOAd C PDM' \
+)
+cmds=("${at_cmds[@]}" "${dl_cmds[@]}");
+
+
+n=0;
+val="status";
+while [ "$val" != "" ]
+do
+	case $val in
+	"menu")
+		var="menus[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Main Menu, (Cancel) to exit'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		;;
+	"settings")
+		if [ $n -eq 0 ]; then
+			title='Please, check the serial/jig settings (menu=<Cancel>):';
+		else
+			title='Serial and Jig Setting (menu=<Cancel>)';
+		fi
+		var="configs[@]"
+		val=$(dialog                                  \
+			--title 'Serial and Jig Settings.'  \
+			--menu  "${title}"                       \
+			0 0 0                                     \
+			"${!var}"                                 \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 1 ]
+		then
+			n=1;
+			val="menu"
+		fi
+		;;
+	"tty_uart")
+		ttys=("$(ls /dev/ttyUSB*)");
+		ttys=("${ttys[@]}" "${ttys[@]}");
+		var="ttys[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 0 ]
+		then
+			uart=$val;
+		fi
+		val="settings"
+		;;
+	"tty_ctrl")
+		ttys=("$(ls /dev/ttyUSB*)");
+		ttys=("${ttys[@]}" "${ttys[@]}");
+		var="ttys[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 0 ]
+		then
+			ctrl=$val;
+		fi
+		val="settings"
+		;;
+	"usb")
+		ttys=("$(ls /dev/ttyACM*)");
+		ttys=("${ttys[@]}" "${ttys[@]}");
+		var="ttys[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 0 ]
+		then
+			uart=$val;
+		fi
+		val="settings"
+		;;
+	"dl_mode")
+		var="dl_cmds[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 1 ]
+		then
+			val="menu"
+		fi
+		;;
+	"at_mode")
+		var="at_cmds[@]"
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 1 ]
+		then
+			val="menu"
+		fi
+		;;
+	"send_at")
+	var=$(dialog --title "AT PROMPT" \
+			--inputbox 'please, entry with at command' 0 0 \
+			3>&1 1>&2 2>&3)
+		# send var to uart
+		# get uart answer
+		# loop with the answer
+		if [ $? -eq 1 ]
+		then
+			val="menu"
+		fi
+		;;
+	"sl_cmds")
+		var="cmds[@]";
+		val=$(dialog                                  \
+			--title 'Perfil'                          \
+			--menu 'Escolha o perfil da instalação:'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 1 ]
+		then
+			val="menu"
+		fi
+		;;
+	"usbtype")
+		var="usbtype[@]";
+		val=$(dialog                                  \
+			--title 'USB type'                        \
+			--menu 'Please, Select the USB type'      \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 0 ]
+		then
+			usb_type=$val;
+		fi
+		val="settings"
+		;;
+	"jigtype")
+		var="jigtype[@]";
+		val=$(dialog                                  \
+			--title 'Jig Type'                          \
+			--menu 'Please, Select the Jig type'  \
+			0 0 0                                     \
+			"${!var}" \
+			3>&1 1>&2 2>&3 )
+		if [ $? -eq 0 ]
+		then
+			jig_type=$val;
+		fi
+		val="settings"
+		;;
+	"status")
+		dialog                                 \
+			--title "Old     Current status"   \
+			--textbox  ./status                 \
+			0 0
+		val="settings";
+		;;
+	"serial")
+		val="menu";
+		;;
+	*)
+		val=""
+		;;
+	esac
+done
+
+save_status () {
+	echo -n > ./status;
+	for (( i=0; i< ${#info[@]}; i+=2 ))
+	do
+		echo "${info[$i]}='${info[$(( $i +  1))]}'" >> ./status
+	done
+}
+
+save_status;

@@ -1,0 +1,5 @@
+uart='/dev/ttyUSB0'
+crtl='/dev/ttyUSB1'
+usb='/dev/ttyACM0'
+usb_type='c'
+jig_type='pdm'
